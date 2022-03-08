@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          margin: 0;
+        }
+        
+        .topnav {
+          font-size: 3.5vw;
+          background-color: green;
+        }
+        
+        
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: red;
+        }
+        
+        .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+
+  
+  
+  .image {
+    opacity: 1;
+    display: block ;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .column:hover .image {
+    opacity: 0.3;
+  }
+  
+  .column:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: transparent;
+    color: black;
+    font-size: 2vw;
+    padding: 32px 32px;
+  }
+     
+
+  * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: flex;
+    }
+
+    .img1 { flex: 1;}
+    .img2 { flex: 1.322;}
+    .img3 { flex: 1.500;}
+    .img4 { flex: 1.699;}
+    .img5 { flex: 1;}
+    .img6 { flex: 1; }
+    .img7 { flex: 1;}
+    .img8 { flex: 0.863;}
+    .img9 { flex: 1.498;}
+
+
+
+  </style>
+</head>
+
+
+
+<body style="background-image: url('images/fadedbg.jpeg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    
+    <div style="background-color:rgb(233, 192, 79);padding:1px;">
+    <h1 style="color: hsl(300, 90%, 12%); text-align:center; font-size: 6vw;"> <b><i>Welcome to Sizzlers</i></b></h1>
+    </div>
+     
+    <div class="topnav">
+    <a>Home</a> <a>About Us</a> <a>Gallery</a> <a>Locate Us</a> 
+    </div>
+
+    
+
+    
+
+
+      <div class="row">
+        <div class="column">
+            <div class='img1'>
+          <img src="images/soups.jpeg" alt="pic 1" class="image" style="width:100% ; height:250px">
+        </div>
+        <div class="middle">
+            <div class="text"> <b>SOUPS</b> <br> earliest archaeological evidence for the consumption of soup dates back to 6000 BC. EXPLORE MENU</div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class='img2'>
+          <img src="images/Sizzling_dragon_chicken_sizzler.jpeg" alt="pic 2" class="image" style="width:100%; height:250px">
+          <div class="middle">
+            <div class="text"> <b>SIZZLERS</b> <br>A sizzler is a medley dish invented in Mumbai, inspired by the Japanese Teppanyaki,. EXPLORE MENU</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="column">
+            <div class='img3'>
+          <img src="images/Starters.jpeg" alt="pic 3" class="image" style="width:100%; height:250px">
+        </div>
+        <div class="middle">
+            <div class="text"> <b>STARTERS</b> <br> Start counting memories with Starters, not calories. EXPLORE MENU</div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="row">
+        <div class="column">
+            <div class='img4'>
+          <img src="images/chinese.jpeg" alt="pic 4" class="image" style="width:100%; height:250px">
+        </div>
+        <div class="middle">
+            <div class="text"> <b>CHINESE</b> <br> Uses 45 Billion Pairs of Chopsticks a Year. So lift your Chopstick now. EXPLORE MENU</div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class='img5'>
+          <img src="images/main_course.jpeg" alt="pic 5" class="image" style="width:100%; height:250px">
+        </div>
+        <div class="middle">
+            <div class="text"> <b>MAIN COURSE </b> <br> is the Spice Capital of the World,producing more than 70 percent of the spices used in the world. EXPLORE MENU </div>
+          </div>
+        </div>
+
+        <div class="column">
+           <div class='img6'>
+              <img src="images/south_indian.jpeg" alt="pic 6" class="image" style="width:100%; height:250px">
+           </div>
+           <div class="middle">
+            <div class="text"><b>SOUTN INDIAN </b> <br> all the South Indian dishes are prepared with rice as the base ingredient. EXPLORE MENU</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row" style="height:auto; width:100%">
+        <div class="column">
+            <div class='img7'>
+          <img src="images/chef_special.jpeg" alt="pic 7" class="image" style="width:100%; height:250px">
+        </div>
+        <div class="middle">
+            <div class="text"> <b>Explore CHEF'S SPECIAL</b></div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class='img8'>
+          <img src="images/beverages.jpeg" alt="pic 8" class="image" style="width:100%; height:250px">
+        </div>
+        <div class="middle">
+            <div class="text"> <b>BEVERAGES</b> <br>The average American consumes about 45 gallons of sugary drinks per year. EXPLORE MENU</div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class='img9'>
+          <img src="images/desserts.jpeg" alt="pic 9" class="image" style="width:100%; height:250px">
+            </div>
+            <div class="middle">
+                <div class="text"> <b>DESSERTS</b> <br>A party without Cakes is just a meeting. EXPLORE MENU</div>
+            </div>
+        </div>
+
+      </div>
+
+
+
+      
+        
+
+
+
+      
+
+</body>
+</html>  
+
+ 
+    
